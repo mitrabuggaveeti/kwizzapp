@@ -14,7 +14,7 @@
 	margin: 10px 5%;
 }
 #logo-name {
-	color: var(--secondary);
+	color: #353b44;
 	font-size: 7rem;
 	/*text-shadow: 0px 0px px var(--light-shadow);*/
 	text-align: left;
@@ -28,7 +28,7 @@
 }
 #description {
 	font-size: 1.5rem;
-	color: var(--secondary);
+	color: #353b44;
 	width: 550px;
 	font-weight: 350;
 	text-align: left;
@@ -40,7 +40,7 @@
 	margin: 50px;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--secondary);
+	background-color: #353b44;
 	align-items: center;
 	width: 400px;
 	transition: 0.3s;
@@ -67,7 +67,7 @@
 	border: none;
 	background-image: linear-gradient(
 		to right,
-		var(--secondary) -30%,
+		#353b44 -30%,
 		var(--accent-pink) 30%,
 		var(--accent-mustard) 100%
 	);
@@ -95,7 +95,7 @@
 		margin: 10px;
 	}
 	#description {
-		color: var(--secondary);
+		color: #353b44;
 		font-weight: 400;
 		font-size: 1.2rem;
 		width: 300px;

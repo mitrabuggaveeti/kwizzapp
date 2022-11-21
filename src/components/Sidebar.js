@@ -7,6 +7,7 @@ import {
 	CreateNewFolder,
 	Dashboard,
 	ExitToApp,
+	Home,
 	MeetingRoom,
 	MenuOpenRounded,
 	MenuRounded,
@@ -15,6 +16,12 @@ import {
 function Sidebar() {
 	const [signOut, setSignOut] = useState(false)
 	const SidedbarData = [
+		{
+			title: 'Home',
+			path: '/',
+			icon: <Home />,
+			CName: 'nav-text',
+		},
 		{
 			title: 'Dashboard',
 			path: '/dashboard',

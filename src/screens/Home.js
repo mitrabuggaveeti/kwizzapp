@@ -45,7 +45,7 @@ const Home = ({ setUser }) => {
 				<div id='Home'>
 					<div id='logo'>
 						<div id='logo-name'>
-							<b>Quiz</b>dom
+							<b>Kwizz</b>app
 						</div>
 						<div id='description'>
 							Now create and join quiz at a single platform.You can create
@@ -56,7 +56,7 @@ const Home = ({ setUser }) => {
 
 					<div id='login-card'>
 						<label className='login-label'>
-							<b>Q</b>
+							<b>K</b>
 						</label>
 						<StyledFirebaseAuth
 							borderRadius='40px'
