@@ -17,6 +17,7 @@ import AttemptQuiz from './screens/AttemptQuiz'
 import Appbar from './components/Appbar'
 import Responses from './screens/Responses'
 import AttemptBlindQuiz from './screens/AttemptBlindQuiz'
+import Footer from './components/Footer'
 
 const App = () => {
 	const [user, setUser] = useState({})
@@ -82,6 +83,7 @@ const App = () => {
 						<Route path='/responses/:quizCode' component={Responses} />
 						<Route component={NotFoundPage} />
 					</Switch>
+					<Footer/>
 				</>
 			)}
 		</div>

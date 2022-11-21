@@ -10,7 +10,7 @@ const Appbar = ({ user, setUser }) => {
 			<div className='slider'>
 				<Sidebar />
 				<Link to='/' className='home'>
-					<b>Quiz</b>dom
+					<b>Kwizz</b>app
 				</Link>
 			</div>
 			<div className='appbar-user'>

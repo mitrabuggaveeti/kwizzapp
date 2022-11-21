@@ -71,7 +71,7 @@ input[type='submit'],
 	background-size: 200% auto;
 	border-radius: 50px;
 	border: none;
-	background-image: var(--gradient);
+	background-color: #000000;
 	color: var(--primary);
 }
 
