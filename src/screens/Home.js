@@ -9,9 +9,9 @@ const Home = ({ setUser }) => {
 	var uiConfig = {
 		signInflow: 'popup',
 		signInOptions: [
-			firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-			firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+			firebase.auth.GoogleAuthProvider.PROVIDER_ID,			
 			firebase.auth.EmailAuthProvider.PROVIDER_ID,
+
 		],
 		callbacks: {
 			signInSuccessWithAuthResult: () => false,
@@ -43,20 +43,9 @@ const Home = ({ setUser }) => {
 				<LoadingScreen />
 			) : (
 				<div id='Home'>
-					<div id='logo'>
-						<div id='logo-name'>
-							<b>Kwizz</b>app
-						</div>
-						<div id='description'>
-							Now create and join quiz at a single platform.You can create
-							trivia quizzes, personality test, polls and survays. Share out
-							your quiz with your students with a unique code.
-						</div>
-					</div>
-
 					<div id='login-card'>
 						<label className='login-label'>
-							<b>K</b>
+							<b>KwizzApp</b>
 						</label>
 						<StyledFirebaseAuth
 							borderRadius='40px'

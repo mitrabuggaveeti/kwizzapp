@@ -8,11 +8,7 @@ const LoadingScreen = () => {
       <h1 className="blue" style={{ fontSize: "5rem" }}>
         <b>Kwizz</b>app
       </h1>
-      {/* <Loader color="#29455a" width={130} height={130}  type="audio" /> */}
-      <Loader color="#29455a" width={130} height={130} type="BallTriangle" />
-      {/* <Loader color="#29455a" width={130} height={130}  type="Puff" /> */}
-      {/* <Loader color="#29455a" width={130} height={130} type="Bars" /> */}
-      {/* <Loader color="#29455a" width={130} height={130}  type="Circles" /> */}
+       <Loader color="#353b44" width={130} height={130} type="Bars" />
     </div>
   );
 };
