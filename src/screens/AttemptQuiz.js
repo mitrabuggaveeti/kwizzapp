@@ -100,8 +100,8 @@ const AttemptQuiz = ({ match }) => {
 		return (
 			<div className='loading'>
 				<h2>
-					Quiz Access is Not Granted by the Creator. Please contact Quiz
-					Creator.
+					You dont have permission to access this Quiz. Please contact Quiz
+					Owner.
 				</h2>
 				<div id='logo-name'>
 					<b>Kwizz</b>app

@@ -6,7 +6,7 @@ import firebase from './firebase/firebase'
 import './App.css'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 // Components
-import Home from './screens/Home'
+import Home from './screens/AppHome'
 import OneTimeDashBoard from './screens/ViewDashboard'
 import CreateQuiz from './screens/NewQuiz'
 import JoinQuiz from './screens/JoinQuiz'

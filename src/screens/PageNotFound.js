@@ -9,8 +9,7 @@ const NotFoundPage = () => {
 				<b>Kwizz</b>app
 			</div>
 			<h3>
-				Who told you to mess up with the URL? <Link to="/">Click here</Link> and
-				Go back to the Dashboard.
+			  <Link to="/">Click here</Link> and Go back to the Dashboard.
 			</h3>
 		</div>
 	)

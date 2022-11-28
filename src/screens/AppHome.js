@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import './Home.css'
+import './AppHome.css'
 import { StyledFirebaseAuth } from 'react-firebaseui'
 import firebase from '../firebase/firebase'
 import LoadingScreen from './LoadingUI'
