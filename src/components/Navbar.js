@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from './Sidebar'
+import SideNav from './SideNav'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { Icon } from '@material-ui/core'
@@ -8,7 +8,7 @@ const Appbar = ({ user, setUser }) => {
 	return (
 		<div className='appbar'>
 			<div className='slider'>
-				<Sidebar />
+				<SideNav />
 				<Link to='/' className='home'>
 					<b>Kwizz</b>app
 				</Link>

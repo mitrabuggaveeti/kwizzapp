@@ -1,11 +1,11 @@
-// send qriginal quiz questions and attempted quiz questions and evaluate the score
+// send qriginal quiz questions and attempted quiz questions and evaluate the totalScore
 
-const EvaluateQuiz = (quizQuestions, attemptedQuestions) => {
-	let score = 0
-	attemptedQuestions.forEach((question) => {
-		const realQues = quizQuestions.find((x) => x.id === question.id)
+const ComputeResult = (questions, attempted) => {
+	let totalScore = 0
+	attempted.forEach((question) => {
+		const realQues = questions.find((x) => x.id === question.id)
 		const correctOptions = realQues.options.filter((op) => op.isCorrect)
-		// Error for Quiz with no correct answers
+
 		if (correctOptions.length < 1) return 0
 
 		const attemptedOptions = question.selectedOptions
@@ -20,15 +20,15 @@ const EvaluateQuiz = (quizQuestions, attemptedQuestions) => {
 				const correct = correctOptions.find((op) => op.text === selectedOp)
 				if (correct !== undefined) qScore += weightage
 			})
-			qScore < 0 ? (score += 0) : (score += qScore)
-			console.log('Score : ', score)
+			qScore < 0 ? (totalScore += 0) : (totalScore += qScore)
+			console.log('Score : ', totalScore)
 		} else if (realQues.optionType === 'radio') {
 			if (correctOptions[0].text === attemptedOptions[0]) {
-				score++
+				totalScore++
 			}
 		}
 	})
-	return score === 0 ? score : score.toFixed(2)
+	return totalScore === 0 ? totalScore : totalScore.toFixed(2)
 }
 
 const q1 = [
@@ -105,6 +105,6 @@ const q2 = [
 	},
 ]
 
-// console.log(EvaluateQuiz(q1, q2))
+// console.log(ComputeResult(q1, q2))
 
-module.exports = EvaluateQuiz
+module.exports = ComputeResult

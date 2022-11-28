@@ -1,6 +1,6 @@
 const express = require('express')
 const Router = express.Router()
-const DB = require('./DB')
+const DB = require('./Database')
 const ObjectId = require('mongodb').ObjectId
 
 // Get Quiz Data

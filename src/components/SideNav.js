@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, Redirect } from 'react-router-dom'
-import './Sidebar.css'
+import './SideNav.css'
 import firebase from '../firebase/firebase'
 import { Icon } from '@material-ui/core'
 import {
@@ -13,7 +13,7 @@ import {
 	MenuRounded,
 } from '@material-ui/icons'
 
-function Sidebar() {
+function SideNav() {
 	const [signOut, setSignOut] = useState(false)
 	const SidedbarData = [
 		{
@@ -90,4 +90,4 @@ function Sidebar() {
 	)
 }
 
-export default Sidebar
+export default SideNav
