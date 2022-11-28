@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import LoadingScreen from './LoadingScreen'
+import LoadingScreen from './LoadingUI'
 import firebase from '../firebase/firebase'
-import ResponsesTable from '../components/ResponsesTable'
+import ResponsesTable from '../components/AllResponseTable'
 
 const Responses = ({ match }) => {
 	const quizId = match.params.quizCode

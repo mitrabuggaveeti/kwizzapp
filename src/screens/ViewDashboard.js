@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Redirect } from 'react-router-dom'
-import './OneTimeDashboard.css'
+import './ViewDashboard.css'
 
 const OneTimeDashboard = ({ user }) => {
 	const [path, setPath] = useState('')
 	// Path Redirection
 	const onDashboard = () => setPath('/dashboard')
-	const onCreateQuiz = () => setPath('/create-quiz')
+	const onCreateQuiz = () => setPath('/new-quiz')
 	const onJoinQuiz = () => setPath('/join-quiz')
 
 	if (path.length > 0) return <Redirect push to={path} />

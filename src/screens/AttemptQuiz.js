@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import firebase from '../firebase/firebase'
-import LoadingScreen from './LoadingScreen'
+import LoadingScreen from './LoadingUI'
 import AttemptedModal from './AttemptedModal'
 
 const AttemptQuiz = ({ match }) => {

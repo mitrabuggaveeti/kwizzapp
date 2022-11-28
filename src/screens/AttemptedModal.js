@@ -18,8 +18,6 @@ const useStyles = makeStyles((theme) => ({
 		boxShadow: theme.shadows[5],
 		padding: theme.spacing(10, 10),
 		borderRadius: "20px",
-		// display:"flex",
-		// alignItems:"center",
 	},
 	buttons: {
 		display: "flex",

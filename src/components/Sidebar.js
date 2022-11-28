@@ -36,7 +36,7 @@ function Sidebar() {
 		},
 		{
 			title: 'Create Quiz',
-			path: '/create-quiz',
+			path: '/new-quiz',
 			icon: <CreateNewFolder />,
 			CName: 'nav-text',
 		},

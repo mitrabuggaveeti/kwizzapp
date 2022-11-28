@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { Redirect } from 'react-router-dom'
 import './CreateQuiz.css'
-import AddQuestionModal from '../components/AddQuestionModal'
-import QuestionsTable from '../components/QuestionsTable'
+import AddQuestionModal from '../components/NewQuesModal'
+import QuestionsTable from '../components/AllQuesTable'
 import { Switch } from '@material-ui/core'
-import LoadingScreen from './LoadingScreen'
+import LoadingScreen from './LoadingUI'
 
 const CreateQuiz = ({
 	user,
@@ -68,7 +68,7 @@ const CreateQuiz = ({
 			setLoading('error')
 		}
 	}
-	if (quizCode) return <Redirect push to={`/created-succesfully/${quizCode}`} />
+	if (quizCode) return <Redirect push to={`/created-quiz/${quizCode}`} />
 
 	if (loading === 'start') return <LoadingScreen />
 

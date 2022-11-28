@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Home.css'
 import { StyledFirebaseAuth } from 'react-firebaseui'
 import firebase from '../firebase/firebase'
-import LoadingScreen from './LoadingScreen'
+import LoadingScreen from './LoadingUI'
 
 const Home = ({ setUser }) => {
 	const [loading, setLoading] = useState(true)

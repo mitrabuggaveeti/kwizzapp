@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import './UserDashBoard.css'
-import CreatedQuizCard from '../components/CreatedQuizCard'
-import JoinedQuizCard from '../components/JoinedQuizCard'
-import LoadingScreen from './LoadingScreen'
-import CreateQuiz from './CreateQuiz'
+import './DashBoard.css'
+import CreatedQuizCard from '../components/MadeQuizCard'
+import JoinedQuizCard from '../components/AttemptedQuizcard'
+import LoadingScreen from './LoadingUI'
+import CreateQuiz from './NewQuiz'
 
 const UserDashboard = ({ user }) => {
 	const [createdQuizzes, setCreatedQuizzes] = useState([])
@@ -11,6 +11,7 @@ const UserDashboard = ({ user }) => {
 	const [loading, setLoading] = useState(true)
 	const [editQuiz, setEditQuiz] = useState([])
 	// Fetch Data from the API
+	console.log(createdQuizzes,attemptedQuizzes)
 	useEffect(() => {
 		if (!user.uid) {
 			setLoading(false)
@@ -110,6 +111,7 @@ const UserDashboard = ({ user }) => {
 							title={quiz.title}
 							score={quiz.responses[0].score}
 							questions={quiz.totalQuestions}
+							code={quiz._id}
 						/>
 					))}
 				</div>

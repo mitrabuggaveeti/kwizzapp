@@ -1,6 +1,6 @@
 import React from "react";
 import Loader from "react-loader-spinner";
-import "./LoadingScreen.css";
+import "./LoadingUI.css";
 
 const LoadingScreen = () => {
   return (

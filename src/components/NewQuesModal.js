@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import { Modal, Icon, IconButton } from '@material-ui/core'
-import './AddQuestionModal.css'
+import './NewQuesModal.css'
 import { DeleteRounded, EditRounded, SaveRounded } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({

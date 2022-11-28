@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './CreatedSuccesfully.css'
+import './SuccesfullyCreated.css'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const CreatedSuccesfully = ({ match }) => {
@@ -14,11 +14,9 @@ const CreatedSuccesfully = ({ match }) => {
 				</div>
 				<input
 					type='text'
-					// className='input-text'
 					id={Copy}
 					value={match.params.quizCode}
 					disabled={true}
-					// onChange={(e) => {}}
 				/>
 				<CopyToClipboard
 					text={match.params.quizCode}

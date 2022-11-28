@@ -16,7 +16,7 @@ import Paper from "@material-ui/core/Paper";
 import Checkbox from "@material-ui/core/Checkbox";
 import IconButton from "@material-ui/core/IconButton";
 import { Delete } from "@material-ui/icons";
-import AddQuestionModal from "./AddQuestionModal";
+import AddQuestionModal from "./NewQuesModal";
 
 function createData(title, options, choice) {
   return { title, options, choice };
